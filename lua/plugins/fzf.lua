@@ -1,0 +1,16 @@
+return {
+    "ibhagwan/fzf-lua",
+    -- optional for icon support
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    -- or if using mini.icons/mini.nvim
+    -- dependencies = { "nvim-mini/mini.icons" },
+    ---@module "fzf-lua"
+    ---@type fzf-lua.Config|{}
+    ---@diagnostic disable: missing-fields
+    opts = {},
+    keys = {
+        { "<leader>pf", "<cmd>FzfLua files<cr>" },
+        { "<leader>pg", "<cmd>FzfLua grep<cr>" }
+    }
+    ---@diagnostic enable: missing-fields
+}
