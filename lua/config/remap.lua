@@ -81,3 +81,9 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+-- splits
+vim.keymap.set("n", "<leader>,", "<C-w>W", { desc = "Previous split" })
+vim.keymap.set("n", "<leader>.", "<C-w>w", { desc = "Next split" })
+vim.keymap.set("n", "<leader>wv", "<cmd>vsplit<CR>")
+vim.keymap.set("n", "<leader>wh", "<cmd>split<CR>")
+vim.keymap.set("n", "<leader>wo", "<cmd>only<CR>")
